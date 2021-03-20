@@ -18,7 +18,7 @@ public class BookController {
     public String getBooks(Model model) {
 
         model.addAttribute("books", bookRepository.findAll());
-
-        return "books";
+        // see into directory books/list.html view
+        return "books/list";
     }
 }
